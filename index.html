@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./img/weather-logo.svg">
+  <title>Weather</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__title">
+        <span class="header__title_time">March 10, 18:38 pm</span>
+        <h2 class="header__title_city">London, UK</h2>
+      </div>
+
+      <div class="header__search">
+        <img src="./img/search-icon.svg" alt="" class="header__search_btn">
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="main__hero">
+
+        <div class="main__hero-title">
+          <h1 class="main__hero_temperature">16°</h1>
+          <h2 class="main__hero_weather">Moslty cloudy</h2>
+
+          <div class="main__hero-min-max">
+            <span class="main__hero_min"><span class="main__hero-min-max--opacity">↓</span> 14°</span>
+            <span class="main__hero_max"><span class="main__hero-min-max--opacity">↑</span> 17°</span>
+          </div>
+        </div>
+
+        <div class="main__hero-weather">
+          <img src="./img/Mostly Cloudy.svg" alt="" class="main__hero-weather_icon">
+        </div>
+      </div>
+
+      <div class="main__hour">
+
+        <!-- 00 -->
+        <div class="main__hour-item">
+          <span class="main__hour-item_time">00:00</span>
+          <img src="./img/Mostly Cloudy.svg" alt="" class="main__hour-item_weather">
+          <h3 class="main__hour-item_temperature">10°</h3>
+
+          <div class="main__hour-huminity">
+            <img src="./img/humidity-icon.svg" alt="" class="main__hour-huminity_icon">
+            <h5 class="main__hour-item_humidity">90%</h5>
+          </div>
+
+        </div>
+
+        <!-- 01 -->
+        <div class="main__hour-item">
+          <span class="main__hour-item_time">01:00</span>
+          <img src="./img/Mostly Cloudy.svg" alt="" class="main__hour-item_weather">
+          <h3 class="main__hour-item_temperature">10°</h3>
+
+          <div class="main__hour-huminity">
+            <img src="./img/humidity-icon.svg" alt="" class="main__hour-huminity_icon">
+            <h5 class="main__hour-item_humidity">90%</h5>
+          </div>
+
+        </div>
+
+        <!-- 02 -->
+        <div class="main__hour-item">
+          <span class="main__hour-item_time">02:00</span>
+          <img src="./img/Mostly Cloudy.svg" alt="" class="main__hour-item_weather">
+          <h3 class="main__hour-item_temperature">10°</h3>
+
+          <div class="main__hour-huminity">
+            <img src="./img/humidity-icon.svg" alt="" class="main__hour-huminity_icon">
+            <h5 class="main__hour-item_humidity">90%</h5>
+          </div>
+
+        </div>
+
+        <!-- 03 -->
+        <div class="main__hour-item">
+          <span class="main__hour-item_time">03:00</span>
+          <img src="./img/Mostly Cloudy.svg" alt="" class="main__hour-item_weather">
+          <h3 class="main__hour-item_temperature">10°</h3>
+
+          <div class="main__hour-huminity">
+            <img src="./img/humidity-icon.svg" alt="" class="main__hour-huminity_icon">
+            <h5 class="main__hour-item_humidity">90%</h5>
+          </div>
+
+        </div>
+
+        <!-- 04 -->
+        <div class="main__hour-item">
+          <span class="main__hour-item_time">04:00</span>
+          <img src="./img/Mostly Cloudy.svg" alt="" class="main__hour-item_weather">
+          <h3 class="main__hour-item_temperature">10°</h3>
+
+          <div class="main__hour-huminity">
+            <img src="./img/humidity-icon.svg" alt="" class="main__hour-huminity_icon">
+            <h5 class="main__hour-item_humidity">90%</h5>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="main__info">
+        <div class="main__info-sunrise-sunset">
+          <div class="main__info-sunrise sunrise-sunset">
+            <img src="./img/sunrise-icon.svg" alt="" class="main__infp_sun-img">
+            <div class="main__info-title">
+              <span>Sunrise</span>
+              <h2 class="main__info_sunrise-time">06:40</h2>
+            </div>
+          </div>
+
+          <div class="main__info-sunset sunrise-sunset">
+            <img src="./img/sunset-icon.svg" alt="" class="main__infp_sun-img">
+            <div class="main__info-title">
+              <span>Sunset</span>
+              <h2 class="main__info_sunset-time">07:04</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__info-infos">
+
+          <div class="main__info-item">
+            <img src="./img/uv-index.svg" alt="">
+            <h2 class="main__info_uv-index">Low</h2>
+            <span>UV</span>
+          </div>
+
+          <div class="main__info-item">
+            <img src="./img/humidity-icon.svg" alt="">
+            <h2 class="main__info_humidity">45%</h2>
+            <span>Humidity</span>
+          </div>
+
+          <div class="main__info-item">
+            <img src="./img/wind-icon.svg" alt="">
+            <h2 class="main__info_wind">10 k/h</h2>
+            <span>Wind</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Info -->
+  <div class="info"></div>
+
+  <!-- Footer -->
+  <footer class="footer"></footer>
+</body>
+
+</html>
