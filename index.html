@@ -13,7 +13,6 @@
 <body>
 
   <div class="wrapper">
-
     <!-- Header -->
     <header class="header">
       <div class="header__title">
@@ -114,6 +113,7 @@
       </div>
 
       <div class="main__info">
+
         <div class="main__info-sunrise-sunset">
           <div class="main__info-sunrise sunrise-sunset">
             <img src="./img/sunrise-icon.svg" alt="" class="main__infp_sun-img">
@@ -152,15 +152,117 @@
             <span>Wind</span>
           </div>
         </div>
+
       </div>
     </main>
   </div>
 
   <!-- Info -->
-  <div class="info"></div>
+  <div class="info">
+    <ul class="info__list">
+      <li>
+        <a href="#">Tomorrow</a>
+      </li>
+      <li>
+        <a href="#">Next 7 days</a>
+      </li>
+      <li>
+        <a href="#">Next 30 days</a>
+      </li>
+    </ul>
+
+    <div class="info__tomorrow">
+      <div class="info__tomorrow-header">
+
+        <div class="info__tomorrow-day-time">
+          <h2 class="info__tomorrow_weeknd-day">Monday</h2>
+          <h3 class="info__tomorrow_weeknd-time">March 10th</h3>
+        </div>
+
+        <div class="info__tomorrow-minmax-weather">
+          <h2 class="info__tomorrow_max">17°/</h2>
+          <h2 class="info__tomorrow_min">14°</h2>
+          <img src="./img/Fog.svg" alt="" class="info__tomorrow_weather-icon">
+        </div>
+
+      </div>
+      <hr>
+      <div class="info__tomorrow-more">
+        <div class="info__tomorrow-more-title">
+          <h2 class="info__tomorrow-more_temperature">17°</h2>
+          <h3 class="info__tomorrow-more_weather">Mostly cloudy</h3>
+        </div>
+
+        <div class="info__tomorrow-more-weather">
+          <img src="./img/Fog.svg" alt="" class="info__tomorrow-more-weather-icon">
+        </div>
+      </div>
+
+      <div class="info__tmorrow-hour">
+        <!-- 00 -->
+        <div class="info__tmorrow-hour-item">
+          <span class="info__tmorrow-hour-item_time">00:00</span>
+          <img src="./img/Mostly Cloudy.svg" alt="" class="info__tmorrow-hour-item_weather">
+          <h3 class="info__tmorrow-hour_temperature">10°</h3>
+
+          <div class="info__tmorrow-hour-huminity">
+            <img src="./img/humidity-icon.svg" alt="" class="info__tmorrow-hour-huminity_icon">
+            <h5 class="info__tmorrow-hour-item_humidity">90%</h5>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="info__tomorrow-info">
+        <div class="info__tomorrow-sunrise-sunset">
+          <div class="info__tomorrow-sunrise sunrise-sunset">
+            <img src="./img/sunrise-icon.svg" alt="" class="info__tomorrow_sun-img">
+            <div class="info__tomorrow-sunrise-title">
+              <span>Sunrise</span>
+              <h2 class="info__tomorrow_sunrise-time">06:40</h2>
+            </div>
+          </div>
+
+          <div class="info__tomorrow-sunset sunrise-sunset">
+            <img src="./img/sunset-icon.svg" alt="" class="info__tomorrow_sun-img">
+            <div class="info__tomorrow-sunrise-title">
+              <span>Sunset</span>
+              <h2 class="info__tomorrow_sunset-time">07:04</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="info__tomorrow-infos">
+
+          <div class="info__tomorrow-infos-item">
+            <img src="./img/uv-index.svg" alt="">
+            <h2 class="info__tomorrow-infos_uv-index">Low</h2>
+            <span>UV</span>
+          </div>
+
+          <div class="info__tomorrow-infos-item">
+            <img src="./img/humidity-icon.svg" alt="">
+            <h2 class="info__tomorrow-infos_humidity">45%</h2>
+            <span>Humidity</span>
+          </div>
+
+          <div class="info__tomorrow-infos-item">
+            <img src="./img/wind-icon.svg" alt="">
+            <h2 class="info__tomorrow-infos_wind">10 k/h</h2>
+            <span>Wind</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__title">
+      <h1>Map</h1>
+      <map name=""></map>
+    </div>
+  </footer>
 </body>
 
 </html>

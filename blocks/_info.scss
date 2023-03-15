@@ -1,56 +1,116 @@
-// How to make direction column?
-
-.main {
-  margin-top: 80px;
+.info {
+  margin-top: 30px;
   padding: 0px 10px 0px 10px;
+  color: $color-black;
 }
 
-.main__hero {
+.info__list {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  li {
+    a {
+      font-family: $font-inter;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+
+      &:focus {
+        color: #FF9D00;
+      }
+    }
+  }
+}
+
+.info__tomorrow {
+  padding: 20px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-top: 30px;
+  background: #313131;
+}
+
+.info__tomorrow-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+}
 
-  .main__hero-title {
-    h1 {
-      font-family: $font-inter;
-      font-weight: 700;
-      font-size: 80px;
-    }
-
-    h2 {
-      font-family: $font-inter;
-      font-weight: 500;
-      font-size: 24px;
-    }
-
-    .main__hero-min-max {
-      font-family: $font-inter;
-      font-weight: 500;
-      font-size: 22px;
-      margin-top: 15px;
-    }
-
-    .main__hero-min-max--opacity {
-      color: $color-gray;
-    }
+.info__tomorrow-day-time {
+  h2 {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 22px;
   }
 
-  .main__hero-weather {
-    img {
-      width: 130px;
-      height: 130px;
-    }
+  h3 {
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 13px;
+    color: $color-gray;
   }
 }
 
-.main__hour {
+.info__tomorrow-minmax-weather {
   display: flex;
-  padding: 25px 20px 25px 20px;
+  align-items: center;
+
+  h2 {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 22px;
+
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+}
+
+hr {
+  background: $color-gray;
+}
+
+.info__tomorrow-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.info__tomorrow-more-title {
+  h2 {
+    font-family: $font-inter;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  h3 {
+    font-family: $font-inter;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
+.info__tomorrow-more-weather {
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.info__tmorrow-hour {
+  display: flex;
   margin-top: 60px;
-  background: rgba(196, 196, 196, 0.3);
   border-radius: 16px;
 
-  .main__hour-item {
+  .info__tmorrow-hour-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,31 +120,31 @@
       margin-right: 25px;
     }
 
-    .main__hour-item_time {
+    .info__tmorrow-hour-item_time {
       font-family: $font-inter;
       font-weight: 500;
       font-size: 16px;
       margin-bottom: 15px;
     }
 
-    .main__hour-item_temperature {
+    .info__tmorrow-hour_temperature {
       font-family: $font-inter;
       font-weight: 500;
       font-size: 22px;
       margin-bottom: 15px;
     }
 
-    .main__hour-item_weather {
+    .info__tmorrow-hour-item_weather {
       width: 35px;
       height: 35px;
       margin-bottom: 10px;
     }
 
-    .main__hour-huminity {
+    .info__tmorrow-hour-huminity {
       display: flex;
       align-content: center;
 
-      .main__hour-huminity_icon {
+      .info__tmorrow-hour-huminity_icon {
         width: 16px;
         height: 16px;
       }
@@ -98,13 +158,10 @@
   }
 }
 
-.main__info {
-  padding: 25px 37px 25px 37px;
+.info__tomorrow-info {
   margin-top: 30px;
-  background: rgba(196, 196, 196, 0.3);
-  border-radius: 16px;
 
-  .main__info-sunrise-sunset {
+  .info__tomorrow-sunrise-sunset {
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -114,7 +171,7 @@
     display: flex;
     align-content: center;
 
-    .main__info-title {
+    .info__tomorrow-sunrise-title {
       span {
         font-family: $font-roboto;
         font-weight: 500;
@@ -130,20 +187,20 @@
     }
   }
 
-  .main__infp_sun-img {
+  .info__tomorrow_sun-img {
     width: 50px;
     height: 50px;
     margin-right: 15px;
   }
 
-  .main__info-infos {
+  .info__tomorrow-infos {
     display: flex;
     justify-content: center;
     align-content: center;
     margin-top: 30px;
   }
 
-  .main__info-item {
+  .info__tomorrow-infos-item {
     display: flex;
     flex-direction: column;
     align-items: center;
