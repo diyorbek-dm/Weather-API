@@ -135,7 +135,7 @@ body {
 }
 
 .main__info {
-  padding: 25px 37px 25px 37px;
+  padding: 25px 25px 25px 25px;
   margin-top: 30px;
   background: rgba(196, 196, 196, 0.3);
   border-radius: 16px;
@@ -143,11 +143,18 @@ body {
 .main__info .main__info-sunrise-sunset {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .main__info .sunrise-sunset {
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main__info .sunrise-sunset .main__info-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 .main__info .sunrise-sunset .main__info-title span {
   font-family: "Roboto", sans-serif;
@@ -163,7 +170,6 @@ body {
 .main__info .main__infp_sun-img {
   width: 50px;
   height: 50px;
-  margin-right: 15px;
 }
 .main__info .main__info-infos {
   display: flex;
