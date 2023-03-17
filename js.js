@@ -17,13 +17,12 @@ const userCityName = document.querySelector('.header__title_city'),
   toolItemIcon = document.querySelector('.tool__item_icon'),
   error = document.querySelector('.error')
 
-// let geoKey = '0db0834f1061c0ef68f6a012e9009bff' // ? New key 4d82a65b5664adb9613d285e27703dbe
-let geoKey = '4d82a65b5664adb9613d285e27703dbe' // ? New key 4d82a65b5664adb9613d285e27703dbe
+let geoKey = '4d82a65b5664adb9613d285e27703dbe' // ? New key 
 
 // Get user location
 async function getLocation() {
   try {
-    const res = await fetch(`https://api.ipstack.com/check?access_key=${geoKey}`)
+    const res = await fetch(`https://api.ipstack.com/check?access_key=4d82a65b5664adb9613d285e27703dbe`)
     const data = await res.json()
     showHeaderCity(data)
   } catch (error) {
@@ -32,6 +31,7 @@ async function getLocation() {
 }
 getLocation()
 
+// It's done
 
 // User City Name
 function showHeaderCity(data) {
@@ -44,8 +44,8 @@ function showHeaderCity(data) {
 
 // Get Main Temperature
 async function mainWeather(city) {
-  try {
-    const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=53b086512bce414fa0852110231203&q=${city}`)
+  try { 
+    const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=53b086512bce414fa0852110231203&q=${city.city}`)
     const data = await res.json()
     mainWetaherInfos(data)
   } catch (error) {
