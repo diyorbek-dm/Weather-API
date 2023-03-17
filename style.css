@@ -24,12 +24,6 @@ body {
   color: white;
 }
 
-.wrapper {
-  background-image: url(../img/cloudy-wallpaper.jpg);
-  background-size: cover;
-  padding-bottom: 30px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -51,6 +45,136 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 22px;
+}
+
+.search__del {
+  display: none;
+}
+
+.search__del.active {
+  display: flex;
+  z-index: 999;
+  padding-right: 10px;
+  position: relative;
+}
+
+.header__search_btn.none {
+  display: none;
+}
+
+.header__search_btn {
+  z-index: 999;
+  padding-right: 10px;
+  position: relative;
+}
+
+.header__serach--tool {
+  position: absolute;
+  top: 15px;
+  padding: 0px 10px 0px 10px;
+  right: 10px;
+  left: 10px;
+  width: 95%;
+  height: auto;
+  background: #747474;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid #9A9A9A;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.header__serach--tool input {
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  border: none;
+  padding-right: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  outline: none;
+  color: white;
+}
+.header__serach--tool input::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  color: rgb(226, 226, 226);
+}
+.header__serach--tool input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  color: rgb(226, 226, 226);
+}
+
+.header__serach--tool.active {
+  opacity: 100;
+}
+
+.item-hr {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.item-hr.active {
+  display: inline;
+}
+
+.header__tool_items {
+  display: flex;
+  flex-direction: column;
+  transition: all ease 0.3s;
+}
+
+.header__tool_items.active {
+  margin-top: 20px;
+}
+
+.header__tool-item.active {
+  display: flex;
+}
+
+.header__tool-item {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.header__tool-item .item-weather {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.header__tool-item h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+}
+.header__tool-item span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  margin-right: 20px;
+}
+.header__tool-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.error {
+  display: none;
+  justify-content: center;
+  margin-top: 15px;
+}
+.error h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: rgb(199, 54, 54);
+}
+
+.error.active {
+  display: flex;
 }
 
 .main {
@@ -87,18 +211,79 @@ body {
   height: 130px;
 }
 
+.main__hour-city.active {
+  display: flex;
+}
+
+.main__hour-city {
+  display: none;
+  padding: 25px 20px 25px 20px;
+  margin-top: 60px;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 16px;
+  overflow-y: scroll;
+}
+.main__hour-city .main__hour-item-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -999;
+}
+.main__hour-city .main__hour-item-city:not(:last-child) {
+  margin-right: 25px;
+}
+.main__hour-city .main__hour-item-city .main__hour-item_time-city {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.main__hour-city .main__hour-item-city .main__hour-item_temperature-city {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.main__hour-city .main__hour-item-city .main__hour-item_weather-city {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.main__hour-city .main__hour-item-city .main__hour-huminity-city {
+  display: flex;
+  align-content: center;
+}
+.main__hour-city .main__hour-item-city .main__hour-huminity-city .main__hour-huminity_icon-city {
+  width: 16px;
+  height: 16px;
+}
+.main__hour-city .main__hour-item-city .main__hour-huminity-city h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.main__hour.none {
+  display: none;
+}
+
 .main__hour {
   display: flex;
   padding: 25px 20px 25px 20px;
   margin-top: 60px;
   background: rgba(196, 196, 196, 0.3);
   border-radius: 16px;
+  overflow-y: scroll;
 }
 .main__hour .main__hour-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: -999;
 }
 .main__hour .main__hour-item:not(:last-child) {
   margin-right: 25px;

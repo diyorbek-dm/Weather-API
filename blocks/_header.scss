@@ -1,9 +1,3 @@
-.wrapper {
-  background-image: url(../img/cloudy-wallpaper.jpg);
-  background-size: cover;
-  padding-bottom: 30px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -27,4 +21,135 @@
     font-weight: 700;
     font-size: 22px;
   }
+}
+
+.search__del {
+  display: none;
+}
+
+.search__del.active {
+  display: flex;
+  z-index: 999;
+  padding-right: 10px;
+  position: relative;
+}
+
+.header__search_btn.none {
+  display: none;
+}
+
+.header__search_btn {
+  z-index: 999;
+  padding-right: 10px;
+  position: relative;
+}
+
+.header__serach--tool {
+  position: absolute;
+  top: 15px;
+  padding: 0px 10px 0px 10px;
+  right: 10px;
+  left: 10px;
+  width: 95%;
+  height: auto;
+  background: #747474;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid #9A9A9A;
+  opacity: 0;
+  transition: all ease 0.3s;
+
+  input {
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    border: none;
+    padding-right: 40px;
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 17px;
+    outline: none;
+    color: white;
+
+    &::placeholder {
+      font-family: $font-inter;
+      font-weight: 500;
+      font-size: 19px;
+      color: rgb(226, 226, 226);
+    }
+  }
+}
+
+.header__serach--tool.active {
+  opacity: 100;
+}
+
+.item-hr {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.item-hr.active {
+  display: inline;
+}
+
+.header__tool_items {
+  display: flex;
+  flex-direction: column;
+  transition: all ease 0.3s;
+}
+
+.header__tool_items.active {
+  margin-top: 20px;
+}
+
+.header__tool-item.active {
+  display: flex;
+}
+
+.header__tool-item {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .item-weather {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  h3 {
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 19px;
+  }
+
+  span {
+    font-family: $font-inter;
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 20px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.error {
+  display: none;
+  justify-content: center;
+  margin-top: 15px;
+
+  h3 {
+    font-family: $font-roboto;
+    font-weight: 600;
+    color: rgb(199, 54, 54);
+  }
+}
+
+.error.active {
+  display: flex;
 }
