@@ -30,7 +30,7 @@ async function getLocation() {
     console.error(error)
   }
 }
-// getLocation()
+getLocation()
 
 
 // User City Name
@@ -43,10 +43,9 @@ function showHeaderCity(data) {
 
 
 // Get Main Temperature
-mainWeather()
 async function mainWeather(city) {
   try {
-    const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=53b086512bce414fa0852110231203&q=tashkent`)
+    const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=53b086512bce414fa0852110231203&q=${city}`)
     const data = await res.json()
     mainWetaherInfos(data)
   } catch (error) {
