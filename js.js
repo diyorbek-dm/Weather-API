@@ -23,7 +23,7 @@ let geoKey = '4d82a65b5664adb9613d285e27703dbe' // ? New key 4d82a65b5664adb9613
 // Get user location
 async function getLocation() {
   try {
-    const res = await fetch(`http://api.ipstack.com/check?access_key=${geoKey}`)
+    const res = await fetch(`https://api.ipstack.com/check?access_key=${geoKey}`)
     const data = await res.json()
     showHeaderCity(data)
   } catch (error) {
